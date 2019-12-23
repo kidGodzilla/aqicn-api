@@ -1,0 +1,36 @@
+{
+  "name": "aqicn-api",
+  "version": "1.0.0",
+  "description": "Node wrapper for the AQICN Air Quality Index API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kidGodzilla/aqicn-api.git"
+  },
+  "author": "James Futhey <futhey@gmail.com> (http://jamesfuthey.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kidGodzilla/aqicn-api/issues"
+  },
+  "homepage": "https://github.com/kidGodzilla/aqicn-api#readme",
+  "keywords": [
+    "aqicn",
+    "air quality index",
+    "air pollution index",
+    "air",
+    "quality",
+    "index",
+    "pollution",
+    "pm25",
+    "pm2.5",
+    "pm10",
+    "aqicn.org",
+    "api"
+  ],
+  "dependencies": {
+    "superagent": "^5.1.3"
+  }
+}
