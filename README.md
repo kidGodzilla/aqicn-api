@@ -1,6 +1,6 @@
 # Aqicn API
 
-Node wrapper for the AQICN Air Quality Index API. New module for accessing AQICN global air quality data, now that Aqicn.org provides a REST API. No web scraping, etc.
+Node wrapper for the AQICN Air Quality Index API (https://aqicn.org/). New module for accessing AQICN global air quality data, now that Aqicn.org provides a REST API. No web scraping, etc.
 
 
 ## Installation

@@ -130,7 +130,8 @@ module.exports = function (conf, cb) {
             } catch(e){}
         }
 
-        if (data.time.v) data.time = data.time.v * 1000;
+        if (data.time) try { data.time = data.time.v * 1000 } catch(e){};
+
         if (data.city) {
             try {
                 data.url = data.city.url;
