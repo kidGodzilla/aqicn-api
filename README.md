@@ -31,6 +31,8 @@ Make a request to the Aqicn.org REST API to gather Air Quality data for a given 
 * `long` (optional): Can be used instead of city for lat/long based location lookup
 
 
+#### Example with city name
+
 ```
 const aqicn = require('aqicn-api');
 
