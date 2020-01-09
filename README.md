@@ -16,15 +16,19 @@ You should be able to get an API token for 1000 requests per minute, in just a f
 
 The API token `demo` can be used for testing, but will only return results for **Shanghai (上海)**.
 
+
 ## Usage
 
 Make a request to the Aqicn.org REST API to gather Air Quality data for a given city (One method exposes the current Aqicn API):
+
 
 #### Configuration Object Inputs:
 
 * `city` **(required)**: The city name for the lookup
 * `token` **(required)**: Your API token (See above)
 * `lang` (optional): Response Explanation Language - currently `en` (English) & `cn` (Simplified Chinese) are supported
+* `lat` (optional): Can be used instead of city for lat/long based location lookup
+* `long` (optional): Can be used instead of city for lat/long based location lookup
 
 
 ```
@@ -80,4 +84,6 @@ aqicn({ city: 'shanghai', lang: 'en', token: 'demo' }, function (data) {
 Pull requests welcome!
 
 * [x] Add additional languages
+* [x] Lat/long based lookups
+
 

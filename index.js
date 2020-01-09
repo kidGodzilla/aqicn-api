@@ -106,7 +106,9 @@ module.exports = function (conf, cb) {
         }
     };
 
-    let { lang = 'en', city = 'beijing', token = 'demo' } = conf || {};
+    let { lang = 'en', city = 'beijing', token = 'demo', lat, long } = conf || {};
+    if (lat && long) city = `geo:${ lat };${ long }`;
+
     let url = `https://api.waqi.info/feed/${ city }/?token=`;
 
     request.get(url + token).set('Content-Type', 'application/json').end((err, response) => {
@@ -130,7 +132,7 @@ module.exports = function (conf, cb) {
             } catch(e){}
         }
 
-        if (data.time) try { data.time = data.time.v * 1000 } catch(e){};
+        try { if (data.time) data.time = data.time.v * 1000 } catch(e){}
 
         if (data.city) {
             try {

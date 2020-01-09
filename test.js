@@ -21,3 +21,9 @@ aqicn({ city: 'shanghai', lang: 'cn', token: 'demo' }, function (data) {
 aqicn({ city: 'bnagkok', lang: 'en', token: 'demo' }, function (data) {
     console.log('\n\nShould return `Unknown station`:\n\n', data);
 });
+
+// Test for lat/long based input
+// Requires a valid key as token to test
+aqicn({ lat: 13.7552227, long: 100.4372396, lang: 'en', token: 'demo' }, function (data) {
+    console.log('\n\nShould return lat/long based results for `Bansomdejchaopraya Rajabhat University`:\n\n', data);
+});
