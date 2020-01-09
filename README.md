@@ -24,11 +24,13 @@ Make a request to the Aqicn.org REST API to gather Air Quality data for a given 
 
 #### Configuration Object Inputs:
 
-* `city` **(required)**: The city name for the lookup
+* `city` **(optional)**: The city name for the lookup
 * `token` **(required)**: Your API token (See above)
 * `lang` (optional): Response Explanation Language - currently `en` (English) & `cn` (Simplified Chinese) are supported
 * `lat` (optional): Can be used instead of city for lat/long based location lookup
 * `long` (optional): Can be used instead of city for lat/long based location lookup
+
+*Note: Either city name or lat+long must be used*
 
 
 #### Example with city name
