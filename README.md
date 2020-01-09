@@ -39,6 +39,16 @@ aqicn({ city: 'shanghai', lang: 'en', token: 'demo' }, function (data) {
 });
 ```
 
+#### Example with Lat / long instead of city name
+
+```
+const aqicn = require('aqicn-api');
+
+aqicn({ lat: 31.2047372, long: 121.4489017, lang: 'en', token: 'demo' }, function (data) {
+    console.log(data);
+});
+```
+
 ## API Response
 
 ```
