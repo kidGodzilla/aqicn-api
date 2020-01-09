@@ -123,7 +123,7 @@ module.exports = function (conf, cb) {
         // Create a "level" from 0-5 representing the AQI
         let level = Math.floor(data.aqi / 50);
         if (level >= 5) level--;
-        data.level = Math.max(level, 5);
+        data.level = Math.min(level, 5);
 
         // Normalize API response values
         if (data.iaqi) for (var k in data.iaqi) {
